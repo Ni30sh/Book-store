@@ -7,7 +7,7 @@
 </head>
 <body style="height: 100%;">
     <table  style="background-color: rgb(250, 228, 200);" 
-    border="1"  width="100%" height="620px"
+    border="1"  width="100%" height="600px"
         <thead >
             <th>logo</th>
             <th colspan="4" >Online Book Store</th>
@@ -28,41 +28,53 @@
                     CIVIL<br><br><br><br>
                 </td>
                 
-                <td colspan=""><img src="xmlbook.jpg" alt="Login Image" height="100" width="100"></td> <!-- Add the image here -->                   
+                <td ><img src="xmlbook.jpg" alt="Login Image" height="100" width="100" <br><br><br>
+                   <img src="aibook.jpg" alt="Login Image"  height="100" width="100"> <br><br>
+                   <img src="pythonbook.jpg" alt="Login Image"height="100" width="100"> <br><br>
+                   <img src="htmlbook.jpg" alt="Login Image"height="100" width="100">   </td> <!-- Add the image here -->                   
                 <td>Book : XMLBible <br>
                     Author : Winston <br>
-                    Publication : Wiely</td>
-                <td align="centre">$30</td>
-                <td></td>    
-            </tr>
-            <tr align="center">
-                <td colspan=""><img src="aibook.jpg" alt="Login Image"  height="100" width="100"></td> <!-- Add the image here -->
-                <td>Book : Artificial intellegence <br>
+                    Publication : Wiely <br><br><br><br>
+                    Book : Artificial intellegence <br>
                     Author : Binto George <br>
-                    Publication: Susan S.Mathai</td>
-                <td align="center">$40.3</td> 
-                <td></td>   
-            </tr>
-        
-            <tr align="center">             
-                <td colspan=""><img src="pythonbook.jpg" alt="Login Image"height="100" width="100"></td> <!-- Add the image here -->
-                <td>Book : Python Programming For Beginners <br>
+                    Publication: Susan S.Mathai<br><br><br><br><br>
+                    Book : Python Programming For Beginners <br>
                     Author :  Mark Lutz <br>
-                    Publication :O′Reilly</td>
-                <td align="center">$30.5</td>    
-
-            </tr>
-            <tr align="center">
-                <td colspan=""><img src="htmlbook.jpg" alt="Login Image"height="100" width="100"></td> <!-- Add the image here -->
-                <td>Book : HTML Black Book <br>
+                    Publication :O′Reilly <br><br><br><br>
+                    Book : HTML Black Book <br>
                     Author : Steven Holzner<br>
-                    Publication : Coriolis, 2000</td>
-                <td align="center">$50</td>
-            </tr>
+                    Publication : Coriolis, 2000  </td>
+                <td align="centre">$30 <br><br><br><br><br><br>
+                    $30.5 <br><br><br><br><br><br>
+                    $50 <br><br><br><br><br><br>
+                $45.4 <br></td>
+                <td  
+                    <form action="cart.html" method="post">
+                        <!-- You can use hidden input fields to store product information like ID, name, and price -->
+                        <input type="hidden" name="product_id" value="123">
+                        <input type="hidden" name="product_name" value="xmlbook">
+                        <input type="hidden" name="product_price" value="$30">
 
-                <tr ></tr>
-            </tr>
-            
+                        <input type="hidden" name="product_id" value="1234">
+                        <input type="hidden" name="product_name" value="aibook">
+                        <input type="hidden" name="product_price" value="$30.5">
+
+                        <input type="hidden" name="product_id" value="12345">
+                        <input type="hidden" name="product_name" value="pythonbook">
+                        <input type="hidden" name="product_price" value="$50">
+
+                        <input type="hidden" name="product_id" value="123456">
+                        <input type="hidden" name="product_name" value="htmlbook">
+                        <input type="hidden" name="product_price" value="$45.4">
+
+                
+                        <input type="submit" value="Add to Cart"><br><br><br><br><br><br>
+                        <input type="submit" value="Add to Cart"><br><br><br><br><br><br>
+                        <input type="submit" value="Add to Cart"><br><br><br><br><br>
+                        <input type="submit" value="Add to Cart"><br>
+                    </form> 
+                </td>    
+            </tr>   
         </tbody>
     </table>
 </body>
